@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div data-controller=toggle>
+    <button data-action=toggle#toggleTargets>Show/Hide Element</button>
+    <div data-toggle-target="hideable">Test text to hide 123</div>
+    <ul data-toggle-target="hideable" hidden>Test List
+      <li>111</li>
+      <li>222</li>
+      <li>333</li>
+    </ul>
+  </div>
+  
+  <div data-controller="slideshow" data-slideshow-index-value="1">
+    <button data-action="slideshow#previous"> ← </button>
+    <button data-action="slideshow#next"> → </button>
+  
+    <div data-slideshow-target="slide">😀</div>
+    <div data-slideshow-target="slide">😅 </div>
+    <div data-slideshow-target="slide">🧐 </div>
+    <div data-slideshow-target="slide">🤯 </div>
+  </div>
+</body>
+</html>
